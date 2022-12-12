@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask login page example - BLog học lập trình cùng Nguyễn Văn Hiếu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Please login</h1>
+    <br>
+    <form action="" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" style="width:50%;" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" style="width:50%;" placeholder="Password" name="password"
+                   value="{{
+          request.form.password }}">
+        </div>
+        <input class="btn btn-success" type="submit" value="Login">
+    </form>
+</body>
+</html>
